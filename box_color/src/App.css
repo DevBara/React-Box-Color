@@ -1,0 +1,16 @@
+.App{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Box {
+  width: 300px;
+  height: 300px;
+  transition: 0.3s;
+  margin: auto 50px 25px 30px;
+}
+
+button{
+  font-size: 45px;
+}
