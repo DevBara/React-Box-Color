@@ -23,7 +23,7 @@ import './App.css';
     // Toggle function for when button is clicked, goes back and forth between 2 colors
     handleToggle = () => {
       this.setState({
-        color: this.state.color
+        color: 'purple' //this.state.color was not responding on click- hard coded to purple
       })
     }
 
@@ -31,7 +31,7 @@ import './App.css';
 
     return(
     <div className="App">
-      <div className="Box" style = {{ backgroundColor: this.state.color}}>
+      <div className="Box" onClick ={this.handleToggle} style = {{ backgroundColor: this.state.color}}>
     </div>
       <button onClick={this.changeColor}>Click Me!</button>
       {/* calls on the clickCounter function to display here */}
@@ -42,4 +42,7 @@ import './App.css';
   
 }
 
-
+// Challenges:
+//connecting toggle function to function properly
+//Currently toggle works when you click on the box itself. 
+//So if you clicked on the button, it changes colors, if you click on the box, it changes back to its state
