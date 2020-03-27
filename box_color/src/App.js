@@ -19,7 +19,7 @@ import './App.css';
       <div className="Box" style ={{backgroundColor: this.state.color}}>
     </div>
       <button>Click Me!</button>
-      <p>Click Counter:</p>
+      <p>Click Counter:{this.state.clickCounter}</p>
 
     </div>)
   }

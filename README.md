@@ -32,7 +32,7 @@ When the button is clicked it should change its color and the counter should inc
 Use a component lifecycle method to call setState.
  
 
-##Requirements
+## Requirements
 
 Pseudocode for things we both covered in class and your toggle functionality
 Must add CSS
