@@ -8,21 +8,33 @@ import './App.css';
   
       this.state = {
         color: 'purple',
-        clickCounter: 0
+        clickCounter: 0,
+        
       }
     }
-
-    toggleClick = () => {
-      this.setState({clickCounter: this.state.clickCounter +1})
+// Need the button 2 do things on click, count the counter and change box color
+    changeColor = () => {
+      this.setState({
+        color: 'orange',
+        clickCounter: this.state.clickCounter +1,
+      })
+      
+    }
+    // Toggle function for when button is clicked, goes back and forth between 2 colors
+    handleToggle = () => {
+      this.setState({
+        color: this.state.color
+      })
     }
 
   render(){
 
     return(
     <div className="App">
-      <div className="Box" style ={{backgroundColor: this.state.color}}>
+      <div className="Box" style = {{ backgroundColor: this.state.color}}>
     </div>
-      <button onClick={this.toggleClick}>Click Me!</button>
+      <button onClick={this.changeColor}>Click Me!</button>
+      {/* calls on the clickCounter function to display here */}
       <p>Click Counter:{this.state.clickCounter}</p>
 
     </div>)

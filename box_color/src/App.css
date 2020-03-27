@@ -8,9 +8,14 @@
   width: 300px;
   height: 300px;
   transition: 0.3s;
-  margin: 5px 50px 25px 385px;
+  margin: 5px 50px 25px 550px;
 }
 
 button{
   font-size: 35px;
+}
+
+p{
+  text-align: center;
+  font-size: 15px;
 }
